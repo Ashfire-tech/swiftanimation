@@ -1,0 +1,12 @@
+
+scene.clear()
+scene.backgroundImage = #imageLiteral(resourceName: "SpaceTheBlueFrontier@2x.png")
+let Frisk = Graphic(image: #imageLiteral(resourceName: "120-1206461_girl-frisk-sprite.png.jpeg"))
+let Point1 = Point(x: -300, y: -10)
+scene.place(Frisk, at: Point1)
+let Sans = Graphic(image: #imageLiteral(resourceName: "114-1144757_transparent-sans-clipart-undertale-sans-hd-png-download.png.jpeg"))
+let Point2 = Point(x: 300, y: 10)
+scene.place(Sans, at: Point2)
+let Point3 = Point(x: 0, y: 0)
+Sans.move(to: Point3, duration: 10)
+Frisk.move(to: Point3, duration: 10)
